@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A set of utilities for webpack development. Inspired by react-dev-utils",
   "main": "src/index.js",
+  "homepage": "https://github.com/headcanon/webpack-dev-utils",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
