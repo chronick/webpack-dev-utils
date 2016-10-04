@@ -5,30 +5,97 @@
 2 info using npm@2.15.1
 3 info using node@v4.4.3
 4 verbose publish [ '.' ]
-5 verbose stack Error: Failed to parse json
-5 verbose stack Unexpected token 's' at 7:4
-5 verbose stack   "scripts": {
-5 verbose stack    ^
-5 verbose stack     at parseError (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:379:11)
-5 verbose stack     at parseJson (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:68:23)
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:48:5
-5 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16
-5 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-6 verbose cwd /Users/headcanon/proj/webpack-dev-utils
-7 error Darwin 16.0.0
-8 error argv "/usr/local/Cellar/node4-lts/4.4.3/bin/node" "/usr/local/bin/npm" "publish"
-9 error node v4.4.3
-10 error npm  v2.15.1
-11 error file /Users/headcanon/proj/webpack-dev-utils/package.json
-12 error code EJSONPARSE
-13 error Failed to parse json
-13 error Unexpected token 's' at 7:4
-13 error   "scripts": {
-13 error    ^
-14 error File: /Users/headcanon/proj/webpack-dev-utils/package.json
-15 error Failed to parse package.json data.
-15 error package.json must be actual JSON, not just JavaScript.
-15 error
-15 error This is not a bug in npm.
-15 error Tell the package author to fix their package.json file. JSON.parse
-16 verbose exit [ 1, true ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/headcanon/proj/webpack-dev-utils',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/headcanon/.npm/webpack-dev-utils/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/headcanon/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/Users/headcanon/.npm/webpack-dev-utils/1.0.0/package.tgz',
+10 verbose tar pack   '/Users/headcanon/proj/webpack-dev-utils' ]
+11 verbose tarball /Users/headcanon/.npm/webpack-dev-utils/1.0.0/package.tgz
+12 verbose folder /Users/headcanon/proj/webpack-dev-utils
+13 info prepublish webpack-dev-utils@1.0.0
+14 verbose addLocalTarball adding from inside cache /Users/headcanon/.npm/webpack-dev-utils/1.0.0/package.tgz
+15 verbose correctMkdir /Users/headcanon/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd webpack-dev-utils@1.0.0
+17 verbose afterAdd /Users/headcanon/.npm/webpack-dev-utils/1.0.0/package/package.json not in flight; writing
+18 verbose correctMkdir /Users/headcanon/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /Users/headcanon/.npm/webpack-dev-utils/1.0.0/package/package.json written
+20 silly publish { name: 'webpack-dev-utils',
+20 silly publish   version: '1.0.0',
+20 silly publish   description: 'A set of utilities for webpack development. Inspired by react-dev-utils',
+20 silly publish   main: 'src/index.js',
+20 silly publish   homepage: 'https://github.com/headcanon/webpack-dev-utils',
+20 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+20 silly publish   author: { name: 'Nick Donohue' },
+20 silly publish   license: 'BSD',
+20 silly publish   readme: '# Webpack Dev Utils\n\nA set of utilities for webpack development.\nMany of these were pulled from [`react-dev-utils`](https://www.npmjs.com/package/react-dev-utils)\n\n## Installation\n\n```\nnpm install --save-dev webpack-dev-utils\n```\n',
+20 silly publish   readmeFilename: 'README.md',
+20 silly publish   gitHead: '7083529c6f52a253e683ebc7d47d4efe6a4b6455',
+20 silly publish   _id: 'webpack-dev-utils@1.0.0',
+20 silly publish   _shasum: 'c9e02fb7924cb68c20273a21aca0e48663a31f61',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name webpack-dev-utils
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'webpack-dev-utils',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'webpack-dev-utils',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/webpack-dev-utils
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/headcanon/.npm/webpack-dev-utils/1.0.0/package.tgz
+29 verbose request uri https://registry.npmjs.org/webpack-dev-utils
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 1:26:59 PM
+32 verbose request using bearer token for auth
+33 verbose request id 085da50305a8aa81
+34 http request PUT https://registry.npmjs.org/webpack-dev-utils
+35 http 403 https://registry.npmjs.org/webpack-dev-utils
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Tue, 04 Oct 2016 17:27:22 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-ord1731-ORD',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1475602041.419183,VS0,VE632',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/headcanon/.npm/registry.npmjs.org/webpack-dev-utils on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : webpack-dev-utils
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid webpack-dev-utils
+42 verbose cwd /Users/headcanon/proj/webpack-dev-utils
+43 error Darwin 16.0.0
+44 error argv "/usr/local/Cellar/node4-lts/4.4.3/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.4.3
+46 error npm  v2.15.1
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.0." : webpack-dev-utils
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

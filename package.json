@@ -1,6 +1,6 @@
 {
   "name": "webpack-dev-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of utilities for webpack development. Inspired by react-dev-utils",
   "main": "src/index.js",
   "homepage": "https://github.com/headcanon/webpack-dev-utils",
